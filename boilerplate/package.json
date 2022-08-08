@@ -6,7 +6,7 @@
     "react",
     "starter"
   ],
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "dependencies": {
     "react": "18.0.0",
     "react-dom": "18.0.0",
