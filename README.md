@@ -33,3 +33,14 @@ hello-world
 passing-props 
 rendering-arrays-in-jsx
 ```
+
+## Maintainer Instructions
+
+1. Login to the organisation's CodeSandbox account.
+2. Head over to [CodeSandbox's GitHub import wizard](https://codesandbox.io/s/github).
+3. Insert example link to the "URL to GitHub" field.
+    - This link will be a subdirectory of this repository. For example, to generate a sandbox for the `boilerplate` example, use https://github.com/TheOdinProject/react-examples/tree/main/boilerplate.
+4. Click the "Open Sandbox" button to generate the sandbox.
+5. After the sandbox is live, click "Share", then "Copy Embed Code". This code will be placed in our markdown files where needed.
+
+Note: Embed options need to be explored.
