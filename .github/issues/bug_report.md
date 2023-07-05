@@ -10,7 +10,7 @@ assignees: ""
 
 Complete the following REQUIRED checkboxes:
 <!-- While editing this template, replace the whitespace between the square brackets with an 'x', e.g. [x] -->
--   [ ] I have thoroughly read and understand [The Odin Project Contributing Guide](https://github.com/TheOdinProject/theodinproject/blob/main/CONTRIBUTING.md)
+-   [ ] I have thoroughly read and understand [The Odin Project Contributing Guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md)
 -   [ ] The title of this issue follows the `Bug: brief description of bug` format, e.g. `Bug: Lesson complete button does not update on click`
 
 The following checkbox is OPTIONAL:
