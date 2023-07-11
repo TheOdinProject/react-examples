@@ -8,7 +8,7 @@ const ButtonComponent = memo(({ children, onClick }) => {
   // To simulate a very slow render
   let i = 0;
   let j = 0;
-  // If you have a really good machine, increase the iteration count to experience it better
+  // increase iteration count for more lag
   const ITERATION_COUNT = 10_000;
   while (i < ITERATION_COUNT) {
     while (j < ITERATION_COUNT) {
@@ -33,6 +33,7 @@ function Counter() {
     setCount((prevState) => prevState + 1);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const memoizedHandleClick = useMemo(() => handleClick, []);
 
   const onRender = (_id, _phase, actualDuration, baseDuration) => {
@@ -43,10 +44,8 @@ function Counter() {
     <div>
       <Profiler id="buttoncomponent" onRender={onRender}>
         <h1>{count}</h1>
-        {/* Swap memoizedHandleClick with handleClick and vice versa */}
-        <ButtonComponent onClick={memoizedHandleClick}>
-          Click me!
-        </ButtonComponent>
+        {/* Swap handleClick with memoizedHandleClick and vice versa */}
+        <ButtonComponent onClick={handleClick}>Click me!</ButtonComponent>
       </Profiler>
       <div>
         <h2>Base Duration:</h2>
