@@ -5,7 +5,7 @@ import './styles.css';
 function App() {
   return (
     <div className="App">
-      <Profile delay={1000} />;
+      <Profile delay={1000} />
     </div>
   );
 }
