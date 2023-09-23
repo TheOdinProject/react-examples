@@ -60,7 +60,7 @@ li {
 button {
   margin-left: 1rem;
   padding: 0.35rem;
-  background-color: #00f;
+  background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 0.25rem;
   font-family: 'Merriweather', serif;
