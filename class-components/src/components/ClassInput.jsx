@@ -1,5 +1,4 @@
-/* eslint-disable react/destructuring-assignment */
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class ClassInput extends Component {
   constructor(props) {

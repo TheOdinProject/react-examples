@@ -1,6 +1,4 @@
-import React, {
-  memo, Profiler, useMemo, useState, useRef,
-} from 'react';
+import { memo, Profiler, useMemo, useState, useRef } from 'react';
 
 // Lets wrap the ButtonComponent with a memo
 // eslint-disable-next-line react/function-component-definition, react/prop-types

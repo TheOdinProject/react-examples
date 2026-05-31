@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Bio from './Bio.jsx';
+import Bio from './Bio';
 
 const Profile = ({ delay }) => {
   const [imageURL, setImageURL] = useState(null);
