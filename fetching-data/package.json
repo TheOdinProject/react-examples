@@ -10,11 +10,11 @@
     "lint": "npx eslint -c ../.eslintrc.json . --ext .js,.jsx --fix || npx prettier ./ --write"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^2.0.0",
-    "vite": "^3.0.0"
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.14"
   }
 }
