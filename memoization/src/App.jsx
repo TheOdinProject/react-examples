@@ -1,11 +1,11 @@
 import { memo, Profiler, useMemo, useState, useRef } from 'react';
 
 // Lets wrap the ButtonComponent with a memo
-// eslint-disable-next-line react/function-component-definition, react/prop-types
 const ButtonComponent = memo(({ children, onClick }) => {
-  // To simulate a very slow render
+  // let's simulate a very slow render
   let i = 0;
   let j = 0;
+
   // increase iteration count for more lag
   const ITERATION_COUNT = 10_000;
   while (i < ITERATION_COUNT) {
@@ -42,12 +42,13 @@ function Counter() {
     <div>
       <Profiler id="buttoncomponent" onRender={onRender}>
         <h1>{count}</h1>
-        {/* Swap handleClick with memoizedHandleClick and vice versa */}
+        {/* Try swapping handleClick with memoizedHandleClick and back! */}
         <ButtonComponent onClick={handleClick}>Click me!</ButtonComponent>
       </Profiler>
       <div>
         <h2>Base Duration:</h2>
         <p>
+          {/* eslint-disable-next-line react-hooks/refs */}
           <strong>{durationRef.current.baseDuration}</strong>
           <span>
             {' '}
@@ -61,6 +62,7 @@ function Counter() {
         </p>
         <h2>Actual Duration:</h2>
         <p>
+          {/* eslint-disable-next-line react-hooks/refs */}
           <strong>{durationRef.current.actualDuration}</strong>
           <span>
             {' '}
