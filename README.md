@@ -4,7 +4,7 @@ This repository houses React examples used as part of The Odin Project's React c
 
 ## How To Add A React Example
 
-These steps should only be done if a maintainer has assigned you to make a new React example for a lesson. This will only happen as part of a discussion in an issue in our [curriculum repo](github.com/TheOdinProject/curriculum).
+These steps should only be done if a maintainer has assigned you to make a new React example for a lesson. This will only happen as part of a discussion in an issue in our [curriculum repo](https://github.com/TheOdinProject/curriculum).
 
 1. Read through the [contributing guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md#curriculum-structure).
 1. Make sure you have Node and npm installed. You may use the [Installing Node.js](https://www.theodinproject.com/lessons/foundations-installing-node-js) lesson to install these tools.
