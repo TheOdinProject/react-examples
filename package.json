@@ -4,14 +4,13 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite -c ./vite.config.js",
+    "lint": "eslint $INIT_CWD --fix || prettier $INIT_CWD --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheOdinProject/react-examples.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheOdinProject/react-examples/issues"
