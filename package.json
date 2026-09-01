@@ -29,5 +29,15 @@
     "globals": "^17.6.0",
     "prettier": "2.7.1",
     "vite": "^8.0.14"
+  },
+  "devEngines": {
+    "os": [
+      {
+        "name": "linux"
+      },
+      {
+        "name": "darwin"
+      }
+    ]
   }
 }
