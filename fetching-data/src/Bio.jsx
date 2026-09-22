@@ -5,7 +5,11 @@ const Bio = ({ delay }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('https://jsonplaceholder.typicode.com/photos', { mode: 'cors' })
+      fetch('https://picsum.photos/v2/list', {
+        headers: {
+          'User-Agent': 'the-odin-project',
+        },
+      })
         .then((response) => response.json())
         .then(() => setBioText('I like long walks on the beach and JavaScript'))
         .catch((error) => console.error(error));
