@@ -6,9 +6,9 @@ const Profile = ({ delay }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('https://jsonplaceholder.typicode.com/photos', { mode: 'cors' })
+      fetch('https://picsum.photos/v2/list')
         .then((response) => response.json())
-        .then((response) => setImageURL(response[0].url))
+        .then((response) => setImageURL(response[0].download_url))
         .catch((error) => console.error(error));
     }, delay);
   }, [delay]);
@@ -31,17 +31,17 @@ const Profile = ({ delay }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/photos", { mode: "cors" })
+      fetch('https://picsum.photos/v2/list')
         .then((response) => response.json())
-        .then((response) => setImageURL(response[0].url))
+        .then((response) => setImageURL(response[0].download_url))
         .catch((error) => console.error(error));
     }, delay);
 
     setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/photos", { mode: "cors" })
+      fetch('https://picsum.photos/v2/list')
         .then((response) => response.json())
         .then((response) =>
-          setBioText("I like long walks on the beach and JavaScript")
+          setBioText('I like long walks on the beach and JavaScript'),
         )
         .catch((error) => console.error(error));
     }, delay + 2000); // here we add an extra 2 seconds of delay
@@ -51,7 +51,7 @@ const Profile = ({ delay }) => {
     (imageURL && (
       <div>
         <h3>Username</h3>
-        <img src={imageURL} alt={"profile"} />
+        <img src={imageURL} alt={'profile'} />
         <Bio bioText={bioText} />
       </div>
     )) || <h1>Loading...</h1>
