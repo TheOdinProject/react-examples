@@ -6,11 +6,7 @@ const Profile = ({ delay }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('https://picsum.photos/v2/list', {
-        headers: {
-          'User-Agent': 'the-odin-project',
-        },
-      })
+      fetch('https://picsum.photos/v2/list')
         .then((response) => response.json())
         .then((response) => setImageURL(response[0].download_url))
         .catch((error) => console.error(error));
@@ -35,22 +31,14 @@ const Profile = ({ delay }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('https://picsum.photos/v2/list', {
-        headers: {
-          'User-Agent': 'the-odin-project',
-        },
-      })
+      fetch('https://picsum.photos/v2/list')
         .then((response) => response.json())
         .then((response) => setImageURL(response[0].download_url))
         .catch((error) => console.error(error));
     }, delay);
 
     setTimeout(() => {
-      fetch('https://picsum.photos/v2/list', {
-        headers: {
-          'User-Agent': 'the-odin-project',
-        },
-      })
+      fetch('https://picsum.photos/v2/list')
         .then((response) => response.json())
         .then((response) =>
           setBioText('I like long walks on the beach and JavaScript'),
